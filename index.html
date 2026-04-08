@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Epigone</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #3498db;
+        }
+        .card p {
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <p>Voici une sélection de mes projets. Cliquez sur une carte pour y accéder.</p>
+        
+        <div class="grid">
+            <a href="https://epigone15.github.io/carte-du-monde/" class="card">
+                <h3>Carte du Monde</h3>
+                <p>Une carte interactive du monde.</p>
+            </a>
+            <a href="https://epigone15.github.io/carte-france-interactive/" class="card">
+                <h3>Carte de France Interactive</h3>
+                <p>Une carte interactive de la France.</p>
+            </a>
+            <a href="https://epigone15.github.io/convertisseur-ultra/" class="card">
+                <h3>Convertisseur Ultra</h3>
+                <p>Un outil de conversion ultra performant.</p>
+            </a>
+            <a href="https://epigone15.github.io/mes-graphiques/" class="card">
+                <h3>Mes Graphiques</h3>
+                <p>Une collection de graphiques variés.</p>
+            </a>
+            <a href="https://epigone15.github.io/mindmap-project/" class="card">
+                <h3>Mindmap Project</h3>
+                <p>Un projet de carte mentale.</p>
+            </a>
+            <a href="https://epigone15.github.io/timeline-ultra/" class="card">
+                <h3>Timeline Ultra</h3>
+                <p>Une timeline interactive.</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
